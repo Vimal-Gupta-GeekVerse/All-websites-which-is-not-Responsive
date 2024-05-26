@@ -1,0 +1,187 @@
+
+/* Common CSS Start */
+*{box-sizing: border-box;}
+body{
+    padding: 0;
+    margin: 0;
+}
+@font-face {
+    font-family: 'Open-Sans';
+    src: url('../font/OpenSans-Bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Calibri';
+    src: url('../font/Calibri\ Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+p{
+    font-family:'Calibri' !important;
+}
+h2{
+    font-family: 'Open-Sans' !important;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.top-bottom{
+    text-align: center;background-color: black;
+    color: white;
+    padding: 10px 0 ;
+    margin: 0;
+}
+
+body>div:nth-child(even){
+    background-color: rgb(239 239 239);
+ } 
+.container{
+width: 1200px;
+margin: auto;
+display: flex;
+flex-wrap: wrap;
+}
+.content{
+    width: 65%;
+    padding: 0 100px;
+}
+.image-section{
+    width: 35%;
+}
+.image-section img{
+    max-width:100%;
+}
+
+.just{
+    text-align: justify;
+}
+
+/* button animation */
+
+.btn a{
+    text-decoration: none;
+    color: aliceblue;
+    font-family: ' Calibri', sans-serif;
+    font-weight: 700;
+    padding: 6px 23px 0;
+    display: table;
+    margin: auto;
+}
+ .btn{
+     height: 30px;
+     width: 130px;
+     /* margin: auto; */
+     cursor: pointer;
+     background-color:  #65413c; 
+     background-image:url("../image/framedf_00001.gif");
+     background-repeat: no-repeat;
+     background-size:60px;
+     background-position: 5px;
+     border-radius: 5px;
+     transition: width 1s;
+}
+.btn:hover{
+    width:170px;
+    box-shadow: 5px 5px 5px  rgba(123, 122, 122,0.8);
+    animation:btn 100s; 
+    animation-iteration-count: 1; 
+}
+ @keyframes btn {
+
+    0%{ background-image:url("../image/Untitled-1.gif");}
+
+    5%{ background-image:url("../image/Untitl1.gif"); }
+    
+    100%{ background-image: none; }
+} 
+
+/* button animation end */
+
+.clear-fix{
+    clear: both;
+}
+.section2,.section3,.section4{
+    padding: 30px 0 30px 0;
+}
+/* Common CSS End */
+
+
+/* First Section */
+
+/* Header start */
+.logo-image{
+  width: 20%;
+}
+.logo-image img{
+    width: 100%;
+    margin: 20px 0 0 50px;
+}
+/* Header End */
+.item1 img{
+    padding-right: 20px;
+}
+/* First Section End */
+
+/* Second Section Start */
+.sec2cent{
+    max-width: 40%;
+    display: block;
+    margin: 8px auto;
+    text-align: center;
+}
+
+.item2 img{
+    padding:0 0 20px 50px;
+}
+
+.section2 div[class="content"]{
+    padding-right:200px;
+}
+/* Second Section End */
+
+/* Third Section Start */
+.setcent{
+    text-align: center;
+    padding-top: 30px;
+    margin: 0;
+}
+.section3 h2{
+   font: 24px bold ;
+   color: #949494;
+   border-bottom: 2px solid black;
+   margin: 8px auto;
+}
+.adds{
+    width: 25%;
+    float: left;
+    margin: 0 50px 20px;
+    padding: 10px;
+    border: 2px solid rgb(0, 0, 0);
+}
+.adds strong{
+    font-family: 'Open-Sans' ;
+    font-size: 30px;
+    margin: 8px auto;
+}
+.adds img{
+    width: 100%;
+}
+.adds p{
+    font-size: 26px;
+    margin: 8px auto;
+}
+/* Third Section End */
+
+/* Fourth Section Start */
+
+.item4 img{
+    max-width: 100%;
+    padding: 0 50px 0 0;
+}
+.section4 div:first-of-type{
+    padding-left: 55px;
+}
+/* Fourth Section End */
+
